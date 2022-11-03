@@ -8,5 +8,9 @@ public class SnakeAndLadder {
 	
 	System.out.println("Single player start at position 0");
 	
+	System.out.println("====================================");
+	
+	int roll_dice=(int)(Math.random()*6+1);
+	System.out.println("Dice Rolled At :"+roll_dice);
  }
 }
