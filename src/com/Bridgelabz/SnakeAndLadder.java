@@ -11,8 +11,9 @@ public class SnakeAndLadder {
 	System.out.println("====================================");
 	
 	int position=0;
-	
 	int condition = 10;
+	int dice_count = 0;
+	
 	
 	while (condition > 0)
 	{
@@ -21,6 +22,11 @@ public class SnakeAndLadder {
 	int roll_dice=(int)(Math.random()*6+1);
 	System.out.println("Dice Rolled At :"+roll_dice);
 	
+	if (roll_dice > 0)
+	{
+		dice_count++;
+	}
+
 	switch(options)
 	{
 	case 1:
@@ -73,6 +79,8 @@ public class SnakeAndLadder {
 	{
 		System.out.println("roll a dice again");
 	}
-	}
+  }
+	
+	System.out.println("The total number of times the dice rolled is:" + dice_count);
  }
 }
